@@ -1,0 +1,142 @@
+here we go!
+
+okay so staitcally tpuyed python with mypy.
+
+okay... so some people don't know what statically typed even means,. maybe
+they only know python. well, we can describe python and the promblems you masy
+face. for example... that types are eefiend when the program is running so you
+may have a web app --- simple flask thing--- that serves dsakfm some content,
+    but thenn, oh kn no, you get a sfnuct fucnction athta function that... may
+    reteurn more than just an int or return none or something.
+thereis the infomercial approahc. has this ever happebned to you? dsakfjd and
+show cadak  undefined is not callable or undn fnjkadjfkds sorrtyu NoneType sis
+not subscriptable or incompatible arguments 3 and 45kmdnsal int and string.
+actually that makes a lot of sence we can have adding int and string ab
+ebecauazse you CAN do that in hjaavascript and it's dsa a thing. anyway so
+
+then we can have a dsajl
+
+so id liek to demo CODE
+
+like simple vocode like a simple flask app... maybe a flask app that adds
+numbers dsa thogether or that gets rpiumes or that does fib... soemtyhing
+simple that gets out of the way. yeah!
+
+anyway
+
+so wee cpiduld have  straightforward exaplme but also a n example that has
+None or that miught return none.
+
+okay
+
+so show the RUNTIME ERROR that we have to fix LATER!
+
+
+then introduce mypy.
+
+mwhat is m,py. static typing for python. uses type hints. it's official. and
+importantly, it is OPTIONAL:. emphaisisze this last pioint. you cam fdsafdsa
+you can
+
+that's great and all edyie, but i don't whant something that is pbarely
+supported or unooficcial like pypy or typescript. I want tsomething that will
+ghain supoort from official python devs. how about Guido van rossu,m? I will
+show them that mypy is 100% legit and 00% supportyed by python with a bunch of
+poeps. but do this AFTER I dexpt=o extoll the virtues of static typing. so the
+peps, the ussues.
+
+caveat: so mypy is kind of beta. it's existed for 3 years now but it very much
+beta software thaty is constantly being improved. and PYthon 3 istself
+supporths these improviments.
+
+how to integrate it into your flow? I have it installed as a bim vim plugin
+that checks types when I sav.e but you can also dfn but if you use tox, you
+can add it to tox, that way you can type check vbefore das nas as part of your
+testing (both local and CI).
+
+
+okay so virtues of static typing... i dunno. less NONes. you can show
+optional. there's the documentatino aspect.
+
+AT THEN END SHOW HOW
+
+will it make python slower? technially yes, but practically no?
+
+will it make python faster? not by itself, but it opens the doors for comp
+sfads ahead of time static compilation. and I WISH I had the timeto demo this
+but I probabily wont'. still typed-asy gcan give me the information I need to
+do cool with a things with... compilation. yeah! it ouowuld have to be with
+floats. only floats. because ints are weird unless I have a speciall (use only
+int32 or uint64 or whatever).
+
+anyway..
+
+
+so at the end show the awesome POSSIBLE perforamcne improvemnte.s but mostly
+demo myopy.
+
+ah yes. so starty from carrappu app that crashes when and gives people 500
+erros when they access it. then sjow the error. does this ever happen to you?
+
+OH! for the quyestiubnsdafdsafnjkan
+
+then explain that Python is dynamically typed. What does that mean?
+
+contrast
+
+have a slide that shows dynamic typing vs. static typing. types determeined at
+runtime. flexible. less code annoptations. static typing.fdjsajfd have to
+annotate every variable with type. have to use through out the entire program.
+then show mypy.dsafjkadsj ikfdklisajk OH! no. show myopykjfldjsa show
+codejkjkhjjk show dynamcically typed code. then show superstatically typed
+code. liek as statically-tped as you can make it. then show off type
+inference. oh.! demo type inferencing! oh! and then finally show the
+optionallyity of type infdfajkj typing static typing. so make it in stages.
+here's purely dynamically typed code. okay... so what's the alternative?
+staicllaly typed code. compare and contrasyt. show the absurdly
+statically-typed code. and then talk about how mypy chekcs this code. discuss
+the int plus string thing and the optional thing as well! and then say mypy
+INFERS types. and then say mypy provides OPTIONAL static typing. have a slides
+that shows expclict type annotations every where. explicity type annotations
+rearely. and that kind of stuff. u100 % runtime typechecking (crashes). 100%
+cmopiler time type checking (does not crah inflcexible). then mympy -- choose
+however much you want -- as much static tyyping as you want.
+
+---
+
+okauy so what did I want to know beorre trying mympy. ifdjsakfjdaks how dio I
+uyse it?
+
+--- well you simply type mympy on the file. Wait... nothing happens?
+that's because mypy is optional and only dsafdjksanfkljdlsafjads tpyechecks
+functions that you have declared as type-checkable.
+
+introduceing Ffdsakhf TYPE ANNOTATIONS.
+
+oh, demonstrated that a poorly typed python program will still run weven with
+BAD tpye annotatinos.
+
+introduce the typigns module. typing module. and how you use it.
+
+hookay sho show imporintg stuff like list or whatever. optional.
+
+then run the code. notice that errors that it spits out. what do they mean?
+
+okay... how can you use them to fix your code? show the union type... or
+don't.
+
+awell that's a little advanced but show that mypy understands instadfajdkf
+isinstance. because that's pretty rad.
+
+oh! show reveal_type() because that is useful.
+
+mypydfahds
+---
+
+cALL TO ARNS. since it is beta encoruage bpopel to report bugs and open pull
+requests. on both mypt and typings. and mention the ython 3,6. thing. yeah!
+
+---
+
+OH! SHOW HOW TO INSTALL IT WITH pip. do a pip install! show the pip install.
+yeah!
