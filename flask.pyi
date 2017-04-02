@@ -1,8 +1,14 @@
+from typing import Callable, Sequence, Dict
 from mypy_extensions import NoReturn
-from typing import Callable
 
 
 class Flask:
     def __init__(self, name: str) -> None: ...
-    def route(self, route: str) -> Callable: ...
+    def route(self, rule: str, methods: Sequence[str]=None) -> Callable: ...
     def run(self, debug: bool=False) -> NoReturn: ...
+
+class _Request:
+    form: Dict[str, str]
+
+
+request = _Request()
