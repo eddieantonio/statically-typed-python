@@ -15,18 +15,29 @@ def css(html: str) -> str:
             background-color: #fcfcfc;
         }
 
-        form button {
-            font-size: 8vh;
-            float: right;
-        }
-
         main {
             font-size: 20vh;
         }
 
+        form label {
+            display: inline-block;
+            width: 6.5em;
+        }
+
         form input {
+            display: inline-block;
+            float: right;
+            width: 6em;
+
+            font-weight: bold;
             font-size: 8vh;
-            max-width: 6em;
+        }
+
+        form button {
+            margin-top: 1vh;
+            float: right;
+
+            font-size: 8vh;
         }
     </style>
     ''' + html)

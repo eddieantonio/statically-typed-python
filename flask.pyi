@@ -7,8 +7,8 @@ class Flask:
     def route(self, rule: str, methods: Sequence[str]=None) -> Callable: ...
     def run(self, debug: bool=False) -> NoReturn: ...
 
-class _Request:
+class Request:
     form: Dict[str, str]
 
 
-request = _Request()
+request = Request()
