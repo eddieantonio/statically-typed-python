@@ -12,14 +12,6 @@ function $$(expr, con) { return [].slice.call((con || document).querySelectorAll
 
 (function(head, body, html){
 
-// Check for classList support and include the polyfill if it's not supported
-if(!('classList' in body)) {
-	var thisScript = $('script[src$="slideshow.js"]'),
-	    script = document.createElement('script');
-	    script.src = thisScript.src.replace(/\bslideshow\.js/, 'classList.js');
-	thisScript.parentNode.insertBefore(script, thisScript);
-}
-
 // http://ichuan.net/post/52/stable-sort-of-javascript-array/
 Array.prototype.stableSort = function (fn) {
   if (!fn) {
