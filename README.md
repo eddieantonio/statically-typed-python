@@ -1,10 +1,36 @@
 Statically Typed Python with mypy
 =================================
 
-Slides License
---------------
+Slides
+------
+
+[Available here](https://docs.google.com/presentation/d/1LCgLaFBEnR9ngTueEj4MBjkhx3Wji0Ms7cfEUFhSEMI/pub?start=false&loop=false&delayms=3000)
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+
+Running the sample code
+-----------------------
+
+### Requirements
+
+```sh
+pip install flask mypy
+```
+
+### Running
+
+```sh
+cd my_hip_site
+python3.6 my_hip_site.py
+```
+
+### Type checking
+
+```sh
+mypy my_hip_site.py
+```
+
 
 Code License
 ------------
