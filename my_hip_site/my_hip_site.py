@@ -38,22 +38,22 @@ app = Flask(__name__)
 def home():
     return _('''
         <form action="/" method="POST">
-            <label> a = <input name=a> </label><br />
-            <label> b = <input name=b> </label><br />
-            <button type=submit> Add! </button>
+            <label>   <input name=a> </label><br />
+            <label> ÷ <input name=b> </label><br />
+            <button type=submit> Divide! </button>
         </form>
     ''')
 
 
 @app.route('/', methods=['POST'])
-def add_integers():
+def divide_numbers():
     a = request.form['a']
     b = request.form['b']
-    answer = a + b
+    answer = a / b
     return _('''
-        <main>{a} + {b} = {answer}</main>
+        <main>{a} ÷ {b} = {answer:.5f}</main>
     '''.format(a=a, b=b, answer=answer))
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

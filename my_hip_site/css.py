@@ -36,27 +36,29 @@ def css(html: str) -> str:
             align-items: center;
             justify-content: center;
 
-            font: bold 10vh sans-serif;
+            font: bold 12.5vh sans-serif;
             color: #333;
             background-color: #fcfcfc;
         }
 
         main {
-            font-size: 20vh;
+            font-size: 12.5vh;
         }
 
         form label {
             display: inline-block;
-            width: 6.5em;
+            width: 4em;
         }
 
         form input {
             display: inline-block;
             float: right;
-            width: 6em;
+            width: 4em;
+
+            text-align: right;
 
             font-weight: bold;
-            font-size: 8vh;
+            font-size: 75%;
         }
 
         form button {
