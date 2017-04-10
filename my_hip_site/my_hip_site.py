@@ -46,10 +46,10 @@ def home():
 
 
 @app.route('/', methods=['POST'])
-def divide_numbers():
+def divide_numbers() -> str:
     a = request.form['a']
     b = request.form['b']
-    answer = a / b
+    answer = int(a) / int(b)
     return _('''
         <main>{a} ÷ {b} = {answer:.5f}</main>
     '''.format(a=a, b=b, answer=answer))
